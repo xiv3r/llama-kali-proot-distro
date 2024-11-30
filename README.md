@@ -1,5 +1,5 @@
 # llama in termux kali proot-distro
-- offline based llama artificial intelligence engine in android
+offline llama based artificial intelligence model engine in android
 
 # Install Kali in Termux
 ```
