@@ -1,22 +1,31 @@
 # llama in termux kali proot-distro
 - offline based llama artificial intelligence engine in android
 
-## Install Kali in Termux
+# Install Kali in Termux
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && echo "clear && proot-distro login kali-nano" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-proot-distro/refs/heads/main/config/installer.sh | sh && proot-distro install kali-nano && proot-distro login kali-nano
 ```
-## Configure Kali
+# Configure Kali
 ```
-apt update && apt install wget -y && wget -O /etc/bash.bashrc https://raw.githubusercontent.com/xiv3r/termux-proot-distro/refs/heads/main/config/bash.bashrc && source /etc/bash.bashrc && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y
+apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.githubusercontent.com/xiv3r/termux-proot-distro/refs/heads/main/config/bash.bashrc && source /etc/bash.bashrc && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y
 ```
-## Configure OLLAMA AI
+# Install LLAMA AI
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/llama-kali-proot-distro/refs/heads/main/llama-installer.sh | sh 
+curl -fsSL https://ollama.com/install.sh | sh
+```
+## choose your llama model
+> replace the `tinyllama` from models below
+```
+ollama pull tinyllama
+```
+## run llama
+```
+ollama run tinyllama
 ```
 
 # Available LLAMA models
   
-| Model              | Parameters | Size  | Download                         |
+| Model              | Parameters | Size  | Download        👇                 |
 | ------------------ | ---------- | ----- | -------------------------------- |
 | Llama 3.2          | 3B         | 2.0GB | `ollama run llama3.2`            |
 | Llama 3.2          | 1B         | 1.3GB | `ollama run llama3.2:1b`         |
