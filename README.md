@@ -14,18 +14,18 @@ apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.g
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 ## choose your llama model
-> replace the `tinyllama` from models below
+> replace the `llama3.2:1b` from models below
 ```
-ollama pull tinyllama
+ollama pull llama3.2:1b
 ```
 ## run llama
 ```
-ollama run tinyllama
+ollama run llama3.2:1b
 ```
 
 # Available LLAMA models
   
-| Model              | Parameters | Size  | Download        👇                 |
+| Model              | Parameters | Size  | Download                         |
 | ------------------ | ---------- | ----- | -------------------------------- |
 | Llama 3.2          | 3B         | 2.0GB | `ollama run llama3.2`            |
 | Llama 3.2          | 1B         | 1.3GB | `ollama run llama3.2:1b`         |
