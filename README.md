@@ -13,12 +13,17 @@ apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.g
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+## Run ollama server
+```
+ollama serve &
+```
 ## choose your llama model
 > replace the `llama3.2:1b` from models below
 ```
 ollama pull llama3.2:1b
 ```
 ## run llama
+> exit `/bye`
 ```
 ollama run llama3.2:1b
 ```
