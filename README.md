@@ -1,5 +1,12 @@
-# llama in termux kali proot-distro
-offline llama based artificial intelligence model engine in android
+
+# <h1 align="center">llama in termux kali proot-distro</h1>
+<p align="center">
+offline based llama artificial intelligence engine in android
+</p>
+
+<p align="center">
+<img src="https://github.com/xiv3r/llama-kali-proot-distro/blob/main/ollama.png" width="auto" height="auto">
+</p>
 
 # Install Kali in Termux
 ```
@@ -11,7 +18,7 @@ apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.g
 ```
 # Install LLAMA AI
 ```
-curl -fsSL https://ollama.com/install.sh | sh
+echo "ollama serve &" >>/etc/bash.bashrc && curl -fsSL https://ollama.com/install.sh | sh
 ```
 ## Run ollama server
 ```
