@@ -17,6 +17,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```
 ollama serve &
 ```
+> hit enter
+
 ## choose your llama model
 > replace the `llama3.2:1b` from models below
 ```
