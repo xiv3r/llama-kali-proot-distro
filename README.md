@@ -1,12 +1,13 @@
 
-# <h1 align="center">llama in termux kali proot-distro</h1>
-<p align="center">
-offline based llama artificial intelligence engine in android
-</p>
+# <div align="center">llama in termux kali proot-distro</div>
 
-<p align="center">
+<h2 align="center">
+offline based llama artificial intelligence engine in android
+</h2>
+
+<div align="center">
 <img src="https://github.com/xiv3r/llama-kali-proot-distro/blob/main/ollama.png" width="auto" height="auto">
-</p>
+</div>
 
 # Install Kali in Termux
 ```
@@ -37,6 +38,8 @@ ollama pull llama3.2:1b
 ollama run llama3.2:1b
 ```
 
+<div align="center">
+
 # Available LLAMA models
   
 | Model              | Parameters | Size  | Download                         |
@@ -61,3 +64,5 @@ ollama run llama3.2:1b
 | Llama 2 Uncensored | 7B         | 3.8GB | `ollama run llama2-uncensored`   |
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`               |
 | Solar              | 10.7B      | 6.1GB | `ollama run solar`               |
+
+</p>
