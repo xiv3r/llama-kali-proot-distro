@@ -21,9 +21,10 @@ apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.g
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
-## Run ollama server (optional)
+## Run ollama server
+> (optional) in case the server is not running
 ```
-ollama serve &
+ollama serve > /dev/null 2>&1 &
 ```
 > hit enter
 
