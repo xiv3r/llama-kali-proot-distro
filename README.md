@@ -19,9 +19,9 @@ apt update && apt install wget curl -y && wget -O /etc/bash.bashrc https://raw.g
 ```
 # Install LLAMA AI
 ```
-echo "ollama serve &" >>/etc/bash.bashrc && curl -fsSL https://ollama.com/install.sh | sh
+curl -fsSL https://ollama.com/install.sh | sh
 ```
-## Run ollama server
+## Run ollama server (optional)
 ```
 ollama serve &
 ```
