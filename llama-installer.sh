@@ -6,6 +6,8 @@ apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--forc
 ##
 apt install curl -y
 ###
+echo "ollama serve > /dev/null 2>&1 &" >> /etc/bash.bashrc
+###
 curl -fsSL https://ollama.com/install.sh | sh
 ###
 ollama pull llama3.2:1b
