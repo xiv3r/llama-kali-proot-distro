@@ -8,6 +8,6 @@ apt install curl -y
 ###
 curl -fsSL https://ollama.com/install.sh | sh
 ###
-ollama pull tinyllama
+ollama pull llama3.2:1b
 ###
-ollama run tinyllama
+ollama run llama3.2:1b
